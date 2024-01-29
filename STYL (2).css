@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.contact h2 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    width: 485px;
+   
+}
+
+form .input-box {
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #cba14d;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgb(206, 174, 30);
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: red;
+}
+
+.field .item ::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.field .error-text {
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10 px;
+    display: none;
+}
+
+.field.error .error-text {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-text {
+    margin-top: -10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: #cba14d;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #cba14d;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
